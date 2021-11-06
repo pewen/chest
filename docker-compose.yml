@@ -1,0 +1,8 @@
+version: '3.8'
+
+services:
+  chest:
+    image: node:16-buster
+    working_dir: /app
+    volumes:
+      - ./chest:/app
