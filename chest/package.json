@@ -13,7 +13,6 @@
       "email": "lbellomo@gmail.com"
     }
   ],
-  "type": "module",
   "main": "src/index.ts",
   "scripts": {
     "build": "tsc",
