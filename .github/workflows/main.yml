@@ -1,0 +1,15 @@
+name: CI
+
+on: [push, pull_request, release]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Install Chest deps
+        run: docker-compose run --rm chest npm i
+
+      - name: Run tests
+        run: docker-compose run --rm chest npm run test
