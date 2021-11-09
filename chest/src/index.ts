@@ -1,5 +1,6 @@
-const spam = () => {
-  return 42
-}
+import 'reflect-metadata'
 
-export { spam }
+import { Metadata, Column } from './decorator'
+import { BaseModel } from './baseModel'
+
+export { Metadata, Column, BaseModel }
